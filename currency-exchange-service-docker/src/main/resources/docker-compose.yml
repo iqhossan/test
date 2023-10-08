@@ -39,7 +39,6 @@ services:
       EUREKA.CLIENT.SERVICEURL.DEFAULTZONE: http://naming-server:8761/eureka
       MANAGEMENT.ZIPKIN.TRACING.ENDPOINT: http://zipkin-server:9411
 
-
   naming-server:
     image: naming-server:latest
     container_name: naming-server
@@ -48,7 +47,7 @@ services:
     networks:
       - currency-network
 
-  #docker run -p 9411:9411 openzipkin/zipkin:2.23
+  #docker run -p 9411:9411 openzipkin/zipkin:2.23 AAA
 
   zipkin-server:
     image: openzipkin/zipkin:2.23
